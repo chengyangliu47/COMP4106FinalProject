@@ -117,13 +117,13 @@ public class MainGUI extends JFrame {
 		if(rbComputer.isSelected()) {
 			computerStarts = 2;
 		}
-		if(rbHerusticVsComputer.isSelected()) {
+		if(rbComputer1VsComputer2.isSelected()) {
 			computerStarts = 3;
 		}
-		if(rbComputerVsHerustic.isSelected()) {
+		if(rbComputer2VsComputer1.isSelected()) {
 			computerStarts = 4;
 		}
-		if(rbComputerVsHerustic.isSelected()) {
+		if(rbHerusticVsComputer.isSelected()) {
 			computerStarts = 5;
 		}
 		if(rbComputerVsHerustic.isSelected()) {

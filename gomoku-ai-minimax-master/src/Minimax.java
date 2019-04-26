@@ -8,6 +8,7 @@ public class Minimax {
 	private static final int winScore = Integer.MAX_VALUE;
 	private static int totalBlackTime;
 	private static int totalWhiteTime;
+	private static int totalBlackHeuristicTime;
 	
 	
 	public Minimax(Board board) {
@@ -146,8 +147,8 @@ public class Minimax {
 				move[1] = (Integer)(bestMove[2]);
 			}
 		}
-		totalBlackTime += (System.currentTimeMillis() - startTime);
-		System.out.println("MiniMax Cases calculated: " + evaluationCount + " Calculation time: " + (System.currentTimeMillis() - startTime) + " ms" + " Total Black time: "+ totalBlackTime + " ms");
+		totalBlackHeuristicTime += (System.currentTimeMillis() - startTime);
+		System.out.println("MiniMax Cases calculated: " + evaluationCount + " Calculation time: " + (System.currentTimeMillis() - startTime) + " ms" + " Total Black time: "+ totalBlackHeuristicTime + " ms");
 		board.thinkingFinished();
 		
 		evaluationCount=0;

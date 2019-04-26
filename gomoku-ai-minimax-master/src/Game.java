@@ -135,7 +135,7 @@ public class Game {
 			}
 		}
 		
-		if(gameModel==4) {
+		if(gameModel==6) {
 			playMove(board.getBoardSize()/2, board.getBoardSize()/2, false);
 			while(checkWinner()==0) {
 				blackPlayHeurstic();
